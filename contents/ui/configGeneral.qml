@@ -46,22 +46,19 @@ KCM.SimpleKCM {
         cfg_iconSize = cfg_iconSizeDefault;
     }
 
+    // Rendered right-aligned on the page-title row by the dialog's header
+    actions: [
+        Kirigami.Action {
+            icon.name: "document-revert"
+            text: i18n("Restore Defaults")
+            onTriggered: page.restoreDefaults()
+        }
+    ]
+
     // The hint spans the full width below the form instead of sitting in the
     // form's field column with a dead label column on the left.
     ColumnLayout {
         spacing: Kirigami.Units.largeSpacing
-
-        RowLayout {
-            Layout.fillWidth: true
-
-            Item { Layout.fillWidth: true }
-
-            QQC2.Button {
-                icon.name: "document-revert"
-                text: i18n("Restore defaults")
-                onClicked: page.restoreDefaults()
-            }
-        }
 
         // Plain two-column grid instead of Kirigami.FormLayout: the form hugs
         // the left edge rather than centering in the page (which left a large
