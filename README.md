@@ -1,4 +1,4 @@
-# System Menu (com.renato.sysmenu)
+# System Menu (com.nerdstrike.sysmenu)
 
 A KDE Plasma 6 panel widget that mimics the macOS Apple menu: a single icon in
 the panel (top-left) that opens a dropdown with system actions.

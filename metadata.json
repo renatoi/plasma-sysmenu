@@ -2,7 +2,7 @@
     "KPackageStructure": "Plasma/Applet",
     "KPlugin": {
         "Name": "System Menu",
-        "Id": "com.renato.sysmenu",
+        "Id": "com.nerdstrike.sysmenu",
         "Description": "macOS-style menu: about, settings, Discover, force quit and session actions",
         "Category": "System Information",
         "Icon": "start-here-kde-symbolic",
@@ -11,7 +11,7 @@
                 "Name": "Renato"
             }
         ],
-        "Version": "1.1",
+        "Version": "1.2",
         "License": "MIT"
     },
     "X-Plasma-API-Minimum-Version": "6.0",

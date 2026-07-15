@@ -1,4 +1,4 @@
-PKG = com.renato.sysmenu
+PKG = com.nerdstrike.sysmenu
 VERSION = $(shell python3 -c "import json; print(json.load(open('metadata.json'))['KPlugin']['Version'])")
 
 .PHONY: install upgrade uninstall lint restart dist

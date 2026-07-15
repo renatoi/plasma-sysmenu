@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and versions follow the `Version` field in `metadata.json` (tag `v<version>`).
 
+## [1.2] - 2026-07-15
+
+### Changed
+- Plugin ID renamed from `com.renato.sysmenu` to `com.nerdstrike.sysmenu`
+  (reverse-DNS of an owned domain). Existing users must remove and re-add the
+  widget.
+
 ## [1.1] - 2026-07-15
 
 ### Added

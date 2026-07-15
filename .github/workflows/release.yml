@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 env:
-  PKG: com.renato.sysmenu
+  PKG: com.nerdstrike.sysmenu
 
 jobs:
   release:
