@@ -40,10 +40,28 @@ KCM.SimpleKCM {
         }
     }
 
+    // Reset every option to its main.xml default
+    function restoreDefaults() {
+        cfg_icon = cfg_iconDefault;
+        cfg_iconSize = cfg_iconSizeDefault;
+    }
+
     // The hint spans the full width below the form instead of sitting in the
     // form's field column with a dead label column on the left.
     ColumnLayout {
         spacing: Kirigami.Units.largeSpacing
+
+        RowLayout {
+            Layout.fillWidth: true
+
+            Item { Layout.fillWidth: true }
+
+            QQC2.Button {
+                icon.name: "document-revert"
+                text: i18n("Restore defaults")
+                onClicked: page.restoreDefaults()
+            }
+        }
 
         // Plain two-column grid instead of Kirigami.FormLayout: the form hugs
         // the left edge rather than centering in the page (which left a large
